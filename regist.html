@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 60px; /* Tambahkan jarak dari atas */
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Supaya tidak terlalu nempel atas */
+      min-height: 100vh;
+    }
+
+    .registration-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      margin-top: 20px; /* Tambahan margin jika perlu ekstra */
+    }
+
+    .registration-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .registration-container label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .registration-container input,
+    .registration-container select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .registration-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1da082;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .registration-container button:hover {
+      background-color: #178c72;
+    }
+
+    .registration-container p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .registration-container a {
+      color: #1da082;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="gambar/putih.mp4" type="video/mp4">
+  </video>
+
+  <div class="registration-container">
+    <h2>Registration</h2>
+    <form action="register.php" method="POST">
+      <label for="fullname">Nama Lengkap:</label>
+      <input type="text" name="fullname" required>
+
+      <label for="email">Email Peserta:</label>
+      <input type="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" required>
+
+      <label for="seminarDate">Tanggal Seminar:</label>
+      <input type="date" name="seminarDate" required>
+
+      <label for="seminarTime">Jam Seminar:</label>
+      <input type="time" name="seminarTime" required>
+
+      <label for="seminarOption">Nama Seminar:</label>
+      <select name="seminarOption" required>
+        <option value="Public Speaking">Public Speaking</option>
+        <option value="Persiapan Mental & Fisik Mencari Kerja">Persiapan Mental & Fisik Mencari Kerja</option>
+        <option value="Know Yourself">Know Yourself</option>
+      </select>
+
+      <button type="submit">Daftar</button>
+    </form>
+    <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+  </div>
+</body>
+</html>

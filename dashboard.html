@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <title>
+    Career Crafters
+  </title>
+  <!-- Nucleo Icons -->
+  <link href="ucleo-icons.css" rel="stylesheet" />
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="css/nucleo-svg.css" rel="stylesheet" />
+  <link id="pagestyle" href="css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        max-width: 100px; /* Tambahkan ini untuk mengatur lebar maksimum gambar */
+    }
+
+    .profile-info {
+        margin-top: 20px;
+    }
+
+    .profile-info h1 {
+        font-weight: bolder;
+    }
+</style>
+
+<body class="g-sidenav-show   bg-gray-100">
+  <div class="min-height-300 bg-info bg-gradient position-absolute w-100"></div>
+  <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="dashboard.html " target="_blank">
+        <img src="gambar/logo cc.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold">Career Crafters</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="dashboard.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agenda.html">
+                  <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                      <i class="ni ni-single-02 text-primary text-sm opacity-10"></i>
+                  </div>
+                  <span class="nav-link-text ms-1">List of Seminars</span> 
+              </a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link " href="regist.html">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Registration</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+              <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                  <i class="ni ni-single-02 text-primary text-sm opacity-10"></i> <!-- Ganti dengan ikon yang sesuai -->
+              </div>
+              <span class="nav-link-text ms-1">Log out</span> <!-- Ganti dengan teks yang sesuai -->
+          </a>
+        </li>
+      </div>
+  </aside>
+  <main class="main-content position-relative border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group">
+              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Type here...">
+            </div>
+          </div>
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line bg-white"></i>
+                  <i class="sidenav-toggler-line bg-white"></i>
+                  <i class="sidenav-toggler-line bg-white"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item px-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0">
+                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bell cursor-pointer"></i>
+              </a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <div class="row mt-4">
+        <div class="ml-4 mb-lg-0 mb-4">
+          <div class="card z-index-2 h-100">
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="gambar/profil.png" alt="" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8 profile-info">
+                        <h1>Profil</h1>
+                        <p>
+                            <h5>Nama : Undefined</h5>
+                            <h5>Email : nurulfikri@gmail.com</h5>
+                            <h5>No telp : +62333333</h5>
+                            <h5>Domisili : Jakarta Selatan</h5>
+                            <h5>Asal Institusi : STT Terpadu Nurul Fikri</h5>
+                        </p>
+                        <p>
+                            <small class="text-body-secondary">Last Updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </main>
+   <!--   Core JS Files   -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/argon-dashboard.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/smooth-scrollbar.min.js"></script>
+  <script src="js/chartjs.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+</body>
+</html>

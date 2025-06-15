@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Career Crafters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    video {
+      position: fixed;
+      top: 50%; left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    body {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-box label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #222;
+    }
+    .form-box input[type="email"],
+    .form-box input[type="password"] {
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #1da082;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-box button:hover {
+      background-color: #178c72;
+    }
+    .form-box p {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .form-box a {
+      color: #1da082;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="gambar/putih.mp4" type="video/mp4">
+  </video>
+
+  <div class="wrapper">
+    <div class="form-box">
+      <h2>Login</h2>
+      <form action="login.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="e.g. name@email.com">
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required placeholder="Masukkan password">
+        
+        <button type="submit">Sign In</button>
+      </form>
+      <p>Belum punya akun? <a href="regist.html">Daftar di sini</a></p>
+    </div>
+  </div>
+</body>
+</html>

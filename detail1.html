@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>List of Seminars</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color:  rgb(8, 29, 80);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .nav-title {
+            font-size:2em;
+            margin: 6px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff0000;
+            font-size:x-small;
+            font-weight: bold;
+            margin: 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff; 
+        }
+        .container {
+            max-width: 100%;
+            margin: 20px auto; 
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #seminar-image {
+            float: right;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #seminar-details {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+
+            #seminar-image {
+                float: right;
+                width: 100%;
+                max-width: 300px;
+                margin-left: 20px;
+            }
+
+            #seminar-details {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="nav-title">List of Seminars</h1>
+        <a href="detail.html">Back</a>
+    </nav>
+    <div class="container">
+        <img id="seminar-image" src="gambar/seminar1.jpg" alt="Seminar Image">
+        <div id="seminar-details">
+            <h2>Know Yourself</h2>
+            <p>Tanggal: 25 September 2024</p>
+            <p>Waktu: 09:00 - 12:00</p>
+            <p>Tempat: Gedung CAREER CRAFTERS, Jl. Bayang kara No.32 Kota Depok Jawa Barat</p>
+
+            <h3>Deskripsi Seminar</h3>
+            <p>Psikotest diadakan sebagai bagian dari strategi calon pelamar untuk mengenali kompetensi diri sebelum memasuki dunia kerja dan meneruskan pelestarian.<br>Selain itu peserta juga dapat memahami secara pribadi kecerdasan dan kemampuan umum, bakat, kemampuan dan gaya kerja, kepribadian dan minat.<br> Semua nilai dan hasil psikotes akan diberikan pada Anda.</p>
+        </div>
+    </div>
+</body>
+</html>
