@@ -1,6 +1,5 @@
 <?php
 // Koneksi ke database
-mysqli_report(MYSQLI_REPORT_OFF);
 $conn = new mysqli("localhost", "root", "", "career_crafters");
 
 // Cek koneksi
