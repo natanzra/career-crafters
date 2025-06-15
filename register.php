@@ -1,3 +1,5 @@
+mysqli_report(MYSQLI_REPORT_OFF); // Tambahkan ini untuk nonaktifkan mode exception
+
 <?php
 // Koneksi ke database
 $conn = new mysqli("localhost", "root", "", "career_crafters");
